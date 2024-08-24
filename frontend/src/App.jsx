@@ -1,11 +1,10 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <h1 className="text-5xl text-red-500">Test</h1>
+            <Outlet />
         </>
     );
 }
